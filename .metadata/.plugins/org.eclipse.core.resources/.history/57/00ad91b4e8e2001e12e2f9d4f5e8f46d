@@ -1,0 +1,32 @@
+package main;
+
+import java.util.ArrayList;
+
+public class DanhSachSinhVien {
+//arrayList 
+	private ArrayList<SinhVien> danhSach;
+
+	// constructor rỗng
+	public DanhSachSinhVien() {
+		this.danhSach = new ArrayList<SinhVien>();
+	}
+
+	// constructor
+	public DanhSachSinhVien(ArrayList<SinhVien> danhSach) {
+		this.danhSach = danhSach;
+	}
+
+	// thêm sinh viên vào danh sách
+	public void themSinhVien(SinhVien sv) {
+		this.danhSach.add(sv);
+	}
+
+
+	// 2. in danh sách sinh viên ra màn hình
+	public void indssv() {
+		for(SinhVien sinhVien : danhSach);
+		System.out.println(SinhVien);
+		
+	}
+
+}

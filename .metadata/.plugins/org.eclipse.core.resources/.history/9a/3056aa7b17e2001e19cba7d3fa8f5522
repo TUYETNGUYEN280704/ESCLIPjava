@@ -1,0 +1,7 @@
+package B59_ENUM;
+
+// sử dụng khi thuộc tính có giơi hạn về giá trị trong HĐT
+ 
+public class ENUM {
+
+}

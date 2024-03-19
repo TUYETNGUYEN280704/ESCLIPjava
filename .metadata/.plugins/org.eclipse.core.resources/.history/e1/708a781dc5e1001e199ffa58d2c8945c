@@ -1,0 +1,26 @@
+package B58_time_dateformat_calendar;
+
+import java.util.concurrent.TimeUnit;
+
+public class TEST {
+public static void main(String[] args) {
+	// hàm lấy ra time hiện tại 
+	long t1 = System.currentTimeMillis();
+	for ( int i=0; i< 10; i++) {
+		System.out.println("test");
+	}
+	long t2 = System.currentTimeMillis();
+	
+	System.out.println(" trước khi chạy for: "+t1);
+	System.out.println(" sau khi chạy for: "+t1);
+	System.out.println(" thời gian chạy từ 1 đến 50 là : "+((t2-t1))+"mls");
+	System.out.println(" thời gian ....................: "+((t2-t1))+ "s");
+	
+	
+	
+	//timeUnit -> chuyển dổi đơn vị time -> time -> phút -> giay
+	// TimeUnit
+	System.out.println("3000 năm ="+ TimeUnit.DAYS.toSeconds(3000*365) +"s");
+	
+	}
+}

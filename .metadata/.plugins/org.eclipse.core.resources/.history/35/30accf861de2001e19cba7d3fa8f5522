@@ -1,0 +1,5 @@
+package B59_ENUM;
+
+public enum Sex {
+
+}

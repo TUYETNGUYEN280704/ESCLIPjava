@@ -1,0 +1,31 @@
+package B62_Stack;
+
+import java.util.Scanner;
+import java.util.Stack;
+
+public class test {
+public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	
+	Stack<String> stackChuoi = new Stack<String>();
+	//
+	// stackChuoi.push("giá trị ") -> đưa gia trị vào stack
+	// stackChuoi.pop() -> lấy giá trị ra , và xóa khỏi stack
+	// stackChuoi.peek() -> lấy giá trị ra , nhưng ko xóa khỏi stack
+	// stackChuoi.clear(); -> xóa tất cả phần tử trong stack
+	// stackChuoi.contains(stackChuoi) -> xác định giá trị stackChuoi có tồn tại trong stack hay ko
+	
+	// ví dụ đảo ngược chuỗi
+	System.out.println("nhập vào chuỗi: ");
+	String s = sc.nextLine();
+	// titv
+	for(int i= 0 ; i<s.length(); i++) {
+		stackChuoi.push(s.charAt(i)+ "");
+	}
+	System.out.println("Chuỗi đảo ngược: ");	
+	for(int i = 0; i< s.length(); i++) {
+		System.out.print(stackChuoi.pop());
+	}
+}	
+}
+

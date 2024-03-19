@@ -1,0 +1,51 @@
+package TaiKhoan;
+
+import java.util.Scanner;
+
+public class taiKhoan {
+	public String stk;
+	public float soDu;
+
+	public taiKhoan() {
+	}
+
+	public taiKhoan(String stk, float soDu) {
+		this.stk = stk;
+		this.soDu = soDu;
+	}
+
+	public void nap(int tien_nap) {
+		soDu += tien_nap;
+	}
+	
+	
+	public void rut(int tien_rut) {
+		if(soDu < tien_rut + 2000){
+			System.out.println(" so dư ko đủ để rút: ");
+		}else {
+			soDu  = ( tien_rut + 2000);
+			System.out.println(" rút tiền thành công :");
+		}
+	}
+
+	
+	public void chuyenKhoann (int tien , taiKhoan nhan) {
+		if(soDu < tien) {
+			System.out.println(" so dư ko đủ để chuyển: ");
+		}
+		else {
+			soDu -= tien;
+			nhan.soDu += tien;
+			
+		}
+	}
+		
+		public void inthongitn()
+		{
+			System.out.println(" so tài khoản "+stk);
+			System.out.println(" số dư "+ soDu);// rút tiền , mỗi lần rút phí 2000
+		}
+
+		
+
+}

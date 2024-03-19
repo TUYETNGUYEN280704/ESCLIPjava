@@ -1,0 +1,16 @@
+package z1_kethua;
+
+public class z2_main {
+public static void main(String[] args) {
+	connguoi cn1 = new connguoi(" tú", "ngon");
+	
+	hocSinh hs1 = new hocSinh("ngon quá ", " ngon ngon ", 10);
+	
+ 	System.out.println(" hs1"+hs1.diemso());
+ 	System.out.println(" hs1"+hs1.anan());
+System.out.println("hs1"+hs1.uonguong());
+	
+	cn1.anan();
+	cn1.uonguong();
+}
+}

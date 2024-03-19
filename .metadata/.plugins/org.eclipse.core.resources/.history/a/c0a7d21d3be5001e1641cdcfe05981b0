@@ -1,0 +1,59 @@
+package view;
+
+import java.awt.BorderLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+import org.w3c.dom.Attr;
+import org.w3c.dom.DOMException;
+import org.w3c.dom.Document;
+import org.w3c.dom.NamedNodeMap;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import org.w3c.dom.TypeInfo;
+import org.w3c.dom.UserDataHandler;
+import org.w3c.dom.html.HTMLBodyElement;
+
+import model.CounterModel;
+
+public class CounterView extends JFrame {
+
+	private CounterModel counterModel;
+	private JButton jButton_up;
+	private JButton jButton_down;
+	private JLabel jLabel_value;  // xuất valude lên màn hình
+	
+	public CounterView() {
+		this.counterModel = new CounterModel();
+		this.init(); // hàm khởi tạo
+		this.setVisible(true);
+	}
+
+	
+	public void init() { // viêt riêng hàm để khởi tạo
+		this.setTitle("Counter");
+		this.setSize(300,300);
+		this.setLocationRelativeTo(null);//  căn chỉnh cho cửa sổ nằm ở giữa màn hình
+
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		
+		// cho jbtton có gtr
+		jButton_up = new JButton("up");
+		jButton_down = new JButton("down");
+		jLabel_value =  new JLabel(this.counterModel.getValue()+""); // vì label chỉ nhận text nên cần ""
+		
+		JPanel jPanel = new JPanel();
+		jPanel.setLayout(new  BorderLayout());
+		jPanel.add(jButton_up, BorderLayout.WEST);
+		jPanel.add(jLabel_value, BorderLayout.CENTER);
+		jPanel.add(jButton_down, BorderLayout.EAST);
+		
+		
+		this.setLayout(new BorderLayout());
+		this.add(jPanel, BorderLayout.CENTER);
+}
+}

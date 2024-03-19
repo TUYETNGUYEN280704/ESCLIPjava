@@ -1,0 +1,36 @@
+package B70_rename_diChuyen_copy_file_tapTin;
+
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.StandardCopyOption;
+
+// đổi tên filee = hàm renameTo
+//
+public class viduFile {
+//	public static void copyAll(File f1, File f2) {
+//		// copy xong ghi đè lên lun
+//		try {
+//			Files.copy(f1.toPath(), f2.toPath(), StandardCopyOption.REPLACE_EXISTING);
+//
+//		} catch (IOException e) {
+//			e.printStackTrace();
+//		}
+//		if(f1.isDirectory()) {
+//			//coppy các tập tin và thư mục con
+//			File[] mangCon = f1.listFiles();
+//			for(File file : mangCon) {
+//				File file_new = new File(f2.getAbsoluteFile()+"/"+file.getName());
+//			}
+// 				
+//		}
+//	}
+
+	
+	public static void main(String[] args) {
+		//tạo file .txt
+		File file1 = new File("C:\\Users\\LENOVO\\eclipse-workspace\\a6_TITV\\src\\B70_rename_diChuyen_copy_file_tapTin/File_1.txt");
+		file1.mkdir();
+		//File f0 = new File("C:\\Users\\LENOVO\\eclipse-workspace\\a6_TITV\\src\\B70_rename_diChuyen_copy_file_tapTin/File_1.txt")
+	}
+}

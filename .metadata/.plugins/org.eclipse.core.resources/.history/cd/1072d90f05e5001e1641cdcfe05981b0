@@ -1,0 +1,34 @@
+package B78_JFrame;
+
+import javax.swing.JFrame;
+
+// jframe là 1 cái lớp abstract
+// vì vậy có thể extends lại có jframe này\/
+// sau khi extends thì cái MyWindow sẽ có đầy đủ all các phương thức của JFrame
+
+public class MyWindow extends JFrame{
+
+	public MyWindow() {}
+	
+	public void show() {
+		this.setVisible(true);
+		
+	}
+	
+	public void show(String title) { // có tiêu đề
+		this.setTitle(title);
+		this.setVisible(true);
+	}
+	
+	public void show(String title, int width , int height) {//tiêu đề và kích cỡ
+		this.setTitle(title);
+		this.setSize(width, height);
+		this.setVisible(true);
+	}
+	
+	public static void main(String[] args) {
+		MyWindow m1 = new MyWindow();
+		m1.show();
+	}
+	
+}

@@ -1,0 +1,97 @@
+package TaiKhoan;
+
+import java.util.Scanner;
+
+public class taiKhoan {
+//	public String stk;
+//	public float soDu;
+//
+//	public taiKhoan() {
+//	}
+//
+//	public taiKhoan(String stk, float soDu) {
+//		this.stk = stk;
+//		this.soDu = soDu;
+//	}
+//
+//	public void nap(int tien_nap) {
+//		soDu += tien_nap;
+//	}
+//	
+//	
+//	public void rut(int tien_rut) {
+//		if(soDu < tien_rut + 2000){
+//			System.out.println(" so dư ko đủ để rút: ");
+//		}else {
+//			soDu  = ( tien_rut + 2000);
+//			System.out.println(" rút tiền thành công :");
+//		}
+//	}
+//
+//	
+//	public void chuyenKhoann (int tien , taiKhoan nhan) {
+//		if(soDu < tien) {
+//			System.out.println(" so dư ko đủ để chuyển: ");
+//		}
+//		else {
+//			soDu -= tien;
+//			nhan.soDu += tien;
+//			
+//		}
+//	}
+//		
+//		public void inthongitn()
+//		{
+//			System.out.println(" số tài khoản "+stk);
+//			System.out.println(" số dư "+ soDu);// rút tiền , mỗi lần rút phí 2000
+//		}
+
+		
+		
+		/*số dư , stk 
+		 * nạp, rút ( phí 2000), chuyển khoản, in thông tin 
+		 * */
+	
+	protected String stk;
+	protected float sodu;
+	
+	public taiKhoan() {
+
+	}
+	
+	public  taiKhoan(String stk, float sodu) {
+		 this.stk= stk;
+		 this.sodu = sodu;
+		
+	}
+	
+	public void rut(float tien) {
+		if(tien  + 2000 > sodu) {
+			System.out.println(" số tiền rút quá lớn , số dư ko đủ: ");
+		}else {
+			sodu = ( tien+2000);
+			System.out.println(" rút đc: " + tien);
+		}
+	}
+	
+	
+	public void nap(float tien) {
+		sodu += tien;
+	}
+	
+	public void chuyenkhoan(float tien, taiKhoan nhan) {
+		if(sodu < tien) {
+			System.out.println(" ko đủ số dư để chuyển :");
+		}else {
+			sodu -= tien;
+			nhan.sodu += tien;
+		}
+	}
+	
+		
+		
+		public void inthongtin() { 
+			System.out.println(" so tài khoản: "+stk);
+			System.out.println(" số dư: "+ sodu);
+		}
+}

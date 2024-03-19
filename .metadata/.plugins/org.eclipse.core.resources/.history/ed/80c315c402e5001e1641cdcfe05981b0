@@ -1,0 +1,13 @@
+package B78_JFrame;
+
+import javax.swing.JFrame;
+
+public class ViDu {
+public static void main(String[] args) {
+	// tạo cửa sổ
+	JFrame jf = new JFrame();
+	// tạo size cho nó
+	jf.setSize(400,600);
+	jf.setVisible(true);
+}
+}

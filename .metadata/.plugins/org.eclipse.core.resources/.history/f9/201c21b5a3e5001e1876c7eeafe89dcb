@@ -1,0 +1,11 @@
+package view;
+
+import javax.swing.JFrame;
+
+public class face_View extends JFrame{
+	
+	
+	
+	
+
+}

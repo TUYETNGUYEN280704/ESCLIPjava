@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;c6_string&apos; to &apos;c6_string_cac_ham&apos;&#x0D;&#x0A;- Original project: &apos;Scanner_01&apos;&#x0D;&#x0A;- Original element: &apos;c6_string&apos;&#x0D;&#x0A;- Renamed element: &apos;c6_string_cac_ham&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;c6_string&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{c6_string.java[c6_string" matchStrategy="1" name="c6_string_cac_ham" qualified="false" references="true" similarDeclarations="false" stamp="1707991198068" textual="false" version="1.0"/>
+</session>

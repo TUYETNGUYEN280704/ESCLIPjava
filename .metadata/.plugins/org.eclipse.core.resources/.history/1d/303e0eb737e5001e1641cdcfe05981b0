@@ -1,0 +1,5 @@
+package model;
+//model : nơi quản lý all đối tương (dữ liệu , thuộc tính)
+public class CounterModel {
+
+}

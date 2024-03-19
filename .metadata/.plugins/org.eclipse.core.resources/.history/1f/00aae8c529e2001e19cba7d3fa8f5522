@@ -1,0 +1,54 @@
+package main;
+
+public class SinhVien {
+
+	private int mssv;
+	private String hoVaten;
+	private int namSinh;
+	private double avg;
+
+	public SinhVien(int mssv, String hoVaten, int namSinh, double avg) {
+		this.mssv = mssv;
+		this.hoVaten = hoVaten;
+		this.namSinh = namSinh;
+		this.avg = avg;
+	}
+
+	public int getMssv() {
+		return mssv;
+	}
+
+	public void setMssv(int mssv) {
+		this.mssv = mssv;
+	}
+
+	public String getHoVaten() {
+		return hoVaten;
+	}
+
+	public void setHoVaten(String hoVaten) {
+		this.hoVaten = hoVaten;
+	}
+
+	public int getNamSinh() {
+		return namSinh;
+	}
+
+	public void setNamSinh(int namSinh) {
+		this.namSinh = namSinh;
+	}
+
+	public double getAvg() {
+		return avg;
+	}
+
+	public void setAvg(double avg) {
+		this.avg = avg;
+	}
+
+	@Override
+	public String toString() {
+		return "SinhVien [mssv=" + mssv + ", hoVaten=" + hoVaten + ", namSinh=" + namSinh + ", avg=" + avg + "]";
+	}
+
+}

@@ -1,0 +1,56 @@
+package TaiKhoan;
+
+import java.util.Scanner;
+
+public class mainn {
+	public static void main(String[] args) {
+		// Scanner sc = new Scanner(System.in);
+
+//		public float napTien() {
+//			Scanner sc = new Scanner(System.in);
+//			float soDu = 50000;
+//			System.out.println(" so dư hiện tại : " + soDu);
+//			System.out.println(" nạp tiền vào : hãy nhập stk" + stk);
+//			stk = sc.nextLine();
+//			System.out.println(" nhập số tiền muốn chuyển vào: ");
+//			float bank = sc.nextInt();
+//			System.out.println(" số tiền sau khi nhận được :");
+//			bank = soDu + bank;
+//			return bank;
+//		}
+		
+//		public void nap(int tien_nap) {
+//			soDu += tien_nap;
+//		}
+//		
+//		}
+//		public void rut(int tien_rut) {
+//			if(soDu < tien_rut + 2000){
+//				System.out.println(" so dư ko đủ để rút: ");
+//			}else {
+//				soDu  = ( tien_rut + 2000);
+//				System.out.println(" rút tiền thành công :");
+//			}
+//		}
+
+		// rút tiền , mỗi lần rút phí 2000
+		public float rutTien() {
+			float sotien = 0;
+			Scanner sc = new Scanner(System.in);
+			System.out.println(" số dư hiện tại ");
+			System.out.println(" số tiền cần rút");
+			int tien = sc.nextInt();
+			if (sotien >= 0 || sotien <= 5000) {
+				System.out.println(" phí rút là 2000");
+				soDu -= sotien - 20000;
+			} else {
+				System.out.println(" ko rút thì ko mất phí: ");
+			}
+
+		}
+		// chuyển khoảnn
+		// int hoogn tin tài khoản
+		
+
+	}
+}

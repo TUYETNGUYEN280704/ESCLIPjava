@@ -1,0 +1,45 @@
+package gameTaiSuu;
+
+import java.util.Scanner;
+
+/*hiển thị tên trò chơi
+cài  tổng số tiền hiện có
+
+cho 1 biên choice, chọn 1 để bắt đầu , sô skhacs để thoát 
+rồi cho ngta nhập số 
+
+ cho phép cược trong phạm vi tiền trong ví
+ 
+ 
+ */
+
+public class tesst {
+public static void main(String[] args) {
+	double taikhoannguoichoi= 500000;
+ 	Scanner sc = new Scanner(System.in);
+	
+	
+
+	int luachon =1;
+	do {
+		System.out.println(" Chào mừng bạn đến với trò chơi tài xỉu!");
+		System.out.println(" Nhập 1 để bắt đầu chò chơi: || Nhập 0 để thoát game: "); );
+		luachon = sc.nextInt();
+		if(luachon ==1) {
+			System.out.println("Bạn đã đồng ý chơi" );
+			System.out.println("Tài khoản hiện có của bạn là: "+taikhoannguoichoi +"bạn muốn đặt cược bao nhiêu");
+			double datcuoc = 0;
+			do {
+				System.out.println("Đặt cược với số tiền >0 và <= "+taikhoannguoichoi);
+				datcuoc = sc.nextDouble();
+			}while(datcuoc <=0 || datcuoc >taikhoannguoichoi);
+			
+			//lựa chọn tài sửu 
+			
+			}
+			
+		}
+	}
+	while ();
+}
+}

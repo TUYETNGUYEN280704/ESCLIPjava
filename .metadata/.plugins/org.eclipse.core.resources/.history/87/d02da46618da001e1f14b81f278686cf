@@ -1,0 +1,48 @@
+package database;
+// file sd cho mục đích thường xuyên 
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+import com.mysql.jdbc.Driver;
+
+public class JDBCUtil {
+	// muốn có 1 kết nối ms thì 
+public static Connection getConnection() {
+	Connection c = null;
+	// đăng kí class mới vào  driverManager
+	// khai báo driver ms ở ngoài 
+	
+	//com.mysql.cj.jdbc.Driver driver = new com.mysql.cj.jdbc.Driver(); // sau khi import thư viện thì ta có thể xóa cái này và rút gọn nó xuống dòng dưới
+	// nếu nó lỗi thì click chuột vào bóng đèn chọn try-catch
+	try {
+		//  đăng kí MYSQL Driver vs DriverManager
+		DriverManager.registerDriver(new com.mysql.cj.jdbc.Driver());
+		//String url = "jdbc:mySQL://<server>:<port>/<database>?<props>";
+	//	String url = "jdbc:mySQL://Databases:3306/DE_1";
+		//String url = "jdbc:mySQL://localhost:3306/DE_1";
+	//	String url = "jdbc:SQL://server:3306/DE_1";
+	//	String url = "jdbc:SQL://Databases:3306/DE_1";
+		// String url = "jdbc:mysql://localhost:3306/DE_1";
+	 String url = "jdbc:sqlserver://localhost:3306;DE_1";
+		String username = "root";
+		String password ="";
+		
+		// tạo kết nối 
+		c = DriverManager.getConnection(url, username, password);
+		
+	} catch (SQLException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	
+	return c;
+	
+}
+
+public static void closeConnection(Connection c) {
+	
+	
+}
+}

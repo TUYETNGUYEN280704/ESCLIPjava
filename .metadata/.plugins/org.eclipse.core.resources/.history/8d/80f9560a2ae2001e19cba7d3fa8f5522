@@ -1,0 +1,64 @@
+package test;
+
+import java.util.Scanner;
+
+import main.DanhSachSinhVien;
+import main.SinhVien;
+
+public class test1 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		DanhSachSinhVien dssv = new DanhSachSinhVien();
+		int luachon = 0;
+		do {
+			System.out.println("***MENU***");
+			System.out.println("Vui lòng nhập lựa chọn: ");
+			System.out.println(
+			""
+			+ "1. thêm sinh viên vào danh sách \n"
+			+ "2. in dssv ra màn hình. \n"
+			+ "3. ktra ds có rỗng hay ko. \n"
+			+ "4. lấy ra số lượng sv trong ds. \n"
+			+ "5. làm rỗng dssv \n"
+			+ "6. ktra sv có tồn tại trong ds ko. \n"
+			+ "7. xóa 1 sv khỏi ds dựa vào mssv. \n"
+			+ "8. tìm kiếm all sv dựa trên tên được nhập từ keyboad. \n"
+			+ "9. xuất ra dssv có điểm từ cao đến thấp. \n"
+			+ "0. thoát khỏi nhen - the end \n");
+			luachon = sc.nextInt();
+			if(luachon ==1) {
+				System.out.println(" nhập mssv"); 
+				String mssv = sc.nextLine();
+				System.out.println(" nhập họ và tên sv"); 
+				String hoVaten = sc.nextLine();
+				System.out.println(" nhập năm sinh"); 
+				int namSinh = sc.nextInt();
+				System.out.println(" nhập điểm"); 
+				float diem = sc.nextFloat();
+				SinhVien sv = new SinhVien(mssv, hoVaten, namSinh, diem)
+				dssv.themSinhVien(sv);
+			}else if(luachon ==2) {
+
+			}else if(luachon ==3) {
+
+			}else if(luachon ==4) {
+
+			}else if(luachon ==5) {
+
+			}else if(luachon ==6) {
+
+			}else if(luachon ==7) {
+
+			}else if(luachon ==8) {
+
+			}else if(luachon ==9) {
+
+
+			}
+
+			
+		}while(luachon !=0);
+		
+	}
+}

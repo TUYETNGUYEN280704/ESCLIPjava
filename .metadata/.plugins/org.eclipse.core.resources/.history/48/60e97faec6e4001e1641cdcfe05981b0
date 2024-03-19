@@ -1,0 +1,20 @@
+package TaiKhoan;
+
+import java.util.Scanner;
+
+public class test {
+	public static void main(String[] args) {
+		// Scanner sc = new Scanner(System.in);
+
+		taiKhoan a = new taiKhoan("01234", 10000);
+		taiKhoan b = new taiKhoan("45678", 20000);
+		
+		a.inthongitn();
+		a.nap(1000);
+		a.rut(500);
+		a.chuyenKhoann(2000, b);
+		a.inthongitn();
+		
+
+	}
+}

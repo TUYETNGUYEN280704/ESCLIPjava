@@ -1,0 +1,33 @@
+package B79_thanhPhan_boCuc;
+
+/*
+ * panel khung lớn chưa
+ * label : login, passwd... chú thishc cho ng dùng thấy
+ * text field : ng dùng gõ chữ dô
+ * button : nút để ấn dô , : ok , reset
+ * frame : bảng / cửa sổ có   |- , vuông, x|
+ *  controles  : đối tượng điều khiển lựa chonn ấn dô
+ *  layout : bố trí các khu vực trong cửa sổ
+ *  thêm 1 điều khiển vật chứa (panel)  add(Component c);
+ * */
+
+
+
+/*
+ * FlowLayout : các thành phần xếp thành 1 luồng liên tiếp
+ * ( 1 hàng ow nhiều hàng)
+ * từ trái sang phải  hoặc ở giữa 
+ * 
+ * GridLayout: các thành phần được sắp xếp thành 1 
+ * lưới các thành phần có kích thước cỡ như nhau (các ô bằng nhau)
+ * 
+ * BorderLayout: các thành phần đc booss trí lần lượt vào các khu vực 
+ * sắp xếp nó tùy ý phía
+ * ( bắc - North(trên)
+ * / đông - East(phải)
+ *  tây - West(trái)
+ *   giữa - Center (giữa)  
+ * */
+public class ViDu_FlowLayout {
+
+}

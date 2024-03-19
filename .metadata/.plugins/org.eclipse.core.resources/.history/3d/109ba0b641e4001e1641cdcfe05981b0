@@ -1,0 +1,28 @@
+package B67_file_folder;
+
+import java.io.File;
+
+public class create_file_folder {
+
+	/// tạo tập tin và thư mục
+	public static void main(String[] args) {
+		
+		// lưu ý:
+		/*windown : \ => \\  ví dụ "C:\\thu muc 1\\thu mục 2\\ tep.docx......
+		 
+		 *linux, macOS ko dùng
+		 * */
+		 
+		File folder1 = new File("C:\\Users\\LENOVO\\eclipse-workspace\\a6_TITV\\src\\B67_file_folder");
+		//ktra file /folder có tồn tại chưa
+		System.out.println(" kta f/f có tồn tại hay ko: "+folder1.exists()); 
+		// => kq là đã tồn tại ; true
+		
+		// tạo thư mục
+		// phương thức mkdir()  make diractory => tạo 1 thư mục
+		File d1 = new File("C:\\Users\\LENOVO\\eclipse-workspace\\a6_TITV\\src\\B67_file_folder\\Directory_1");
+		d1.mkdir();
+		
+
+	}
+}

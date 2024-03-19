@@ -1,0 +1,30 @@
+package controller;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.Action;
+
+import view.CounterView;
+//counterListener : lắng nghe hành động của ng dùng
+
+// implement 1 cái interface có sẵn tròn java
+// interface này liên qquan đến khu vực nút bấm
+
+public class CounterListener implements ActionListener{
+
+	private CounterView ctv; 
+	
+	// để cái listener này hiểu chương tr này mún làm cái gì
+	// thì nó phải nhận vào 1 cái couterview
+	public CounterListener() {
+		this.ctv = ctv;
+
+	}
+	
+	@Override
+	public void actionPerformed(ActionEvent e) {
+ 		System.out.println();
+	}
+ 	
+}

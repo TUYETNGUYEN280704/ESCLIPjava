@@ -1,0 +1,23 @@
+package B65_MAP;
+
+/*map là 1 interface đại diện cho 1 đối tượng chứa các ánh xạ giữa 
+ * các khóa ( key) và các value .
+ * mỗi khóa sẽ tương ứng với 1 giá trị , 
+ * ví dụ như danh bạ điện thoại 
+ * + số điện thoại là khóa 
+ * + và tên người  là giá trị 
+ * + mỗi khóa sẽ tương ứng với duy nhất 1 giá trị 
+ * 
+ 
+ 
+  */
+
+
+//tra từ điển anh việt
+
+public class tuDien {
+
+	public static void main(String[] args) {
+		
+	}
+}
